@@ -1,0 +1,14 @@
+<div class="row justify-content-end" style="background: #fd961a;">
+  <div class="col" style="text-align: end;">
+    <div ngbDropdown>
+      <img src="../../../../assets/images/avatar.png" alt="" style="width: 40px;border-radius: 25px; cursor: pointer;" id="dropdownForm1"
+        ngbDropdownToggle>
+      <div ngbDropdownMenu aria-labelledby="dropdownForm1">
+        <button ngbDropdownItem (click)="transferencia()" *ngIf="login==true">Transferencias</button>
+        <button ngbDropdownItem (click)="operacion()" *ngIf="login==true">Operaciones</button>
+        <button ngbDropdownItem (click)="salir()" *ngIf="login==true">Salir</button>
+        <button ngbDropdownItem *ngIf="login==false" (click)="entrar()">Entrar</button>
+      </div>
+    </div>
+  </div>
+</div>
